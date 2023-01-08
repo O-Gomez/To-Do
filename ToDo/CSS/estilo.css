@@ -1,0 +1,231 @@
+body {
+    background: linear-gradient(0deg, rgba(97, 97, 97, 1) 0%, rgba(236, 236, 236, 1) 100%);
+    height: 100vh;
+    width: 100vw;
+}
+
+div.contenedor {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+div.centrado {
+    min-width: 380px;
+    max-width: 640px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form#agregar_form,
+form#agregar_form input {
+    width: 100%;
+}
+
+form#act_form,
+form#act_form input {
+    width: 95%;
+}
+
+input.nueva {
+    border: none;
+    font-size: 15px;
+    background: transparent;
+    min-width: 295px;
+    border-bottom: 1px black solid;
+    box-shadow: none;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+input.nueva:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -6px 5px -5px inset;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+input.nueva:focus {
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -6px 5px -5px inset;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.btnn {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+
+.btn-todo {
+    border-radius: .25rem 1rem 1rem .25rem;
+    background-color: #dc3545;
+    border: 1px #dc3545 solid;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out;
+}
+
+.btn-selec {
+    width: 40px;
+    background-color: #dc3545;
+    border: 1px #dc3545 solid;
+    position: absolute;
+    right: 0;
+    border-radius: 1rem .25rem .25rem 1rem;
+    font-weight: 8000;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out;
+}
+
+.btn-todo:hover,
+.btn-selec:hover {
+    background-color: #ad3b46;
+    border: 1px #ad3b46 solid;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out;
+}
+
+.btn-mod {
+    width: 40px;
+    background-color: #d8d8d8;
+    border: 1px #d8d8d8 solid;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    border-radius: 1rem .25rem .25rem 1rem;
+    font-weight: 1000;
+    opacity: 0.6;
+    z-index: 10;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out;
+}
+
+.btn-mod:hover {
+    background-color: #0dbcdf;
+    border: 1px #0dbcdf solid;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out;
+}
+
+.btn-done {
+    width: 40px;
+    background-color: #198754;
+    border: 1px #198754 solid;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    border-radius: 1rem .25rem .25rem 1rem;
+    font-weight: 1000;
+    opacity: 0.6;
+    z-index: 10;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out;
+}
+
+.btn-done:hover {
+    background-color: #17ac66;
+    border: 1px #17ac66 solid;
+    transition: background-color .15s ease-in-out, border .15s ease-in-out;
+}
+
+.mucho-texto {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+div.ocultar {
+    display: none;
+}
+
+/* div.scroll {
+    max-height: 368px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #fff #aaa;
+    scroll-padding-block-start: 110px;
+} */
+
+label.list-group-item {
+    cursor: pointer;
+}
+
+.form-check-input:checked+.form-checked-content {
+    text-decoration: line-through;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.opacity-50 {
+    opacity: .5;
+}
+
+.opacity-75 {
+    opacity: .75;
+}
+
+.list-group {
+    width: auto;
+}
+
+.form-check-input:checked+.form-checked-content {
+    opacity: .5;
+}
+
+.form-check-input-placeholder {
+    pointer-events: none;
+    border-style: dashed;
+}
+
+[contenteditable]:focus {
+    outline: 0;
+}
+
+.list-group-checkable {
+    display: grid;
+    gap: .5rem;
+    border: 0;
+}
+
+.list-group-checkable .list-group-item {
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.list-group-item-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+}
+
+.list-group-item-check:hover+.list-group-item {
+    background-color: var(--bs-light);
+}
+
+.list-group-item-check:checked+.list-group-item {
+    color: #fff;
+    background-color: var(--bs-blue);
+}
+
+.list-group-item-check[disabled]+.list-group-item,
+.list-group-item-check:disabled+.list-group-item {
+    pointer-events: none;
+    filter: none;
+    opacity: .5;
+}
