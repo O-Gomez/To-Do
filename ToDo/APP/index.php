@@ -78,6 +78,7 @@ include("../PHP/conn.php");
                 </label>
             </div><!-- Fin lista de tareas -->
         </div>
+        <div class="credito">By <a href="https://www.linkedin.com/in/oscar-g%C3%B3mez-178a08261" target="_blank">Oscar Gómez</a></div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
