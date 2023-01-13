@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
             type: 'POST',
             data: inf,
             success: function () {
-                $('#lista').load('../APP/index.php #lista');
+                $('#lista').load('index.php #lista');
                 $('.toDo-scrollbar').mCustomScrollbar("scrollTo", "bottom", {
                     scrollInertia: 500
                 });
@@ -52,12 +52,12 @@ function actualizar(val1) {
         type: 'POST',
         data: { v1: val1, v2: val2 },
         success: function () {
-            $('#tareaMarcable' + val1).load('../APP/index.php #tareaMarcable' + val1),
+            $('#tareaMarcable' + val1).load('index.php #tareaMarcable' + val1),
                 editable(val1);
             console.log("lal");
         }
     });
-    formuInput.focus();
+    //formuInput.focus();
 };
 
 //MARCAR Y DESMARCAR TAREAS
@@ -69,10 +69,10 @@ function marca(val1, val2) {
         type: 'POST',
         data: { v1: val1, v2: val2 },
         success: function () {
-            $('#tareaMarcable' + val1).load('../APP/index.php #tareaMarcable' + val1);
+            $('#tareaMarcable' + val1).load('index.php #tareaMarcable' + val1);
         }
     });
-    formuInput.focus();
+    //formuInput.focus();
 };
 
 //VACIAR LISTA
@@ -94,5 +94,5 @@ document.getElementById('btnEliminar').addEventListener('click', function () {
             $('#lista').load('index.php #lista');
         }
     });
-    formuInput.focus();
+    //formuInput.focus();
 });

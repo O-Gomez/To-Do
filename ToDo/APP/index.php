@@ -58,7 +58,7 @@ include("../PHP/conn.php");
                             <div class="ocultar" id="tareaEditable<?php echo $tarea; ?>">
                                 <label class="list-group-item d-flex gap-3">
                                     <form id="act_form">
-                                        <input class="nueva" type="text" placeholder="Nueva tarea..." value="<?php echo $tupla['contenido']; ?>" maxlength="90" name="act_tarea<?php echo $tarea; ?>" id="act_tarea<?php echo $tarea; ?>" style="font-size: 17px;" required>
+                                        <input class="nueva" type="text" placeholder="Nueva tarea..." value="<?php echo $tupla['contenido']; ?>" maxlength="90" name="act_tarea<?php echo $tarea; ?>" id="act_tarea<?php echo $tarea; ?>" style="font-size: 17px;" autocomplete="off" required>
                                         <!-- QUITAR ESTE BOTON -->
                                         <button type="button" class="btnn btn-done" title="Modificar" onclick="actualizar('<?php echo $tarea; ?>');">+</button>
                                     </form>
@@ -72,7 +72,7 @@ include("../PHP/conn.php");
                 <label class="list-group-item d-flex gap-3 bg-light okk">
                     <form id="agregar_form">
                         <span class="pt-1 form-checked-content">
-                            <input class="nueva" type="text" placeholder="Nueva tarea..." maxlength="90" name="agg_tarea" id="agg_tarea" autofocus="autofocus" required>
+                            <input class="nueva" type="text" placeholder="Nueva tarea..." maxlength="90" name="agg_tarea" id="agg_tarea" autofocus="autofocus" autocomplete="off" required>
                         </span>
                     </form>
                 </label>
