@@ -11,13 +11,43 @@ div.contenedor {
 }
 
 div.centrado {
-    min-width: 380px;
-    max-width: 640px;
-    width: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+div.toDo-scrollbar {
+    background-color: rgb(240, 240, 240);
+}
+
+@media screen and (min-width: 801px) {
+    div.toDo-scrollbar {
+        height: 460px;
+    }
+
+    .list-group {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    input {
+        font-size: 1.1rem !important;
+    }
+
+    div.centrado {
+        width: 95vw;
+        transform: translate(-51%, -50%);
+    }
+
+    div.toDo-scrollbar {
+        height: 90vh;
+    }
+
+    .list-group {
+        width: auto;
+    }
 }
 
 form#agregar_form,
@@ -129,11 +159,11 @@ input.nueva:focus {
     transition: background-color .15s ease-in-out, border .15s ease-in-out;
 }
 
-.mucho-texto {
+/* .mucho-texto {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-}
+} */
 
 div.ocultar {
     display: none;
@@ -178,10 +208,6 @@ label.list-group-item {
 
 .opacity-75 {
     opacity: .75;
-}
-
-.list-group {
-    width: auto;
 }
 
 .form-check-input:checked+.form-checked-content {
